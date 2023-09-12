@@ -1,0 +1,228 @@
+/* Poppins Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  padding: 50px 0;
+  width: 100%;
+  background: #222;
+  z-index: 100;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo img {
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #949494;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #0dc309;
+}
+
+nav a:focus {
+  color: #0dc309;
+}
+
+.contact_me {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background: #0dc309;
+  cursor: pointer;
+  padding: 15px 30px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.join_now button:hover {
+  background-color: #ff5c00;
+}
+
+.mobile_join_us,
+.last_point {
+  display: none;
+}
+
+.reg-incase {
+  margin-left: 100px;
+}
+
+.reg-incase button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  line-height: 26px;
+  color: #ffffff;
+  outline: none;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  font-size: 1.5rem;
+  color: #c0c0c0;
+}
+
+// Responsiveness starts here
+@media (max-width: 1280px) {
+  header {
+    width: 85%;
+  }
+  nav a {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav a {
+    font-size: 18px;
+    margin: 0 1rem;
+  }
+
+  .join_now button {
+    outline: none;
+    background: #222;
+    border-radius: 35px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+  .close_icon {
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  header {
+    height: 5vh;
+    overflow-y: hidden;
+  }
+  header .nav-btn,
+  .reg-incase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .reg-incase button {
+    padding: 5px 50px 5px 50px;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #222;
+    color: #ffffff;
+    transition: 1s;
+    transform: translateX(-100vh);
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  .reg {
+    display: none;
+  }
+  .join_now button {
+    display: none;
+  }
+  .last_point {
+    display: block;
+  }
+  .mobile_join_us {
+    display: block;
+    background-color: #ff5c00;
+    border-radius: 35px;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  header {
+    width: 90%;
+  }
+  header nav {
+    height: 100%;
+  }
+  .mobile_logo {
+    display: block;
+  }
+  .mobile_logo img {
+    width: 100px;
+    height: 120px;
+  }
+}
