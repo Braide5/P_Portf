@@ -33,6 +33,27 @@ footer {
   }
 }
 
+/* Medium Screens */
+@media (max-width: 991px) {
+  footer {
+    .inner_footer {
+      width: 85%;
+      padding: 50px 0;
+
+      .footer_nav {
+        column-gap: 20px;
+        a {
+          font-size: 13px;
+        }
+        .footer_contact_me{
+          padding: 12px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 /* Small Screens */
 @media (max-width: 480px) {
   footer {

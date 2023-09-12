@@ -60,3 +60,51 @@
     }
   }
 }
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .message_me{
+    padding: 50px 0;
+
+    .message_header{
+      span{
+        font-size: 14px;
+      }
+      h3{
+        font-size: 16px;
+      }
+    }
+    .message_box{
+      width: 70%;
+
+      input{
+        font-size: 10px;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .message_me{
+    padding: 50px 0;
+
+    .message_header{
+      span{
+        font-size: 14px;
+      }
+      h3{
+        font-size: 16px;
+      }
+    }
+    .message_box{
+      width: 90%;
+
+      input{
+        font-size: 10px;
+        padding-left: 30px;
+      }
+    }
+  }
+}

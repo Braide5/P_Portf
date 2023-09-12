@@ -1,10 +1,15 @@
 .design_process {
   background-color: #222;
 
+  .design_head{
+    text-align: center;
+    display: none;
+  }
+
   .inner_design_process {
     width: 80%;
-    margin: 0 auto;
     padding: 100px 0;
+    margin: 0 auto;
     display: flex;
     column-gap: 30px;
 
@@ -182,6 +187,250 @@
             font-style: normal;
             font-weight: 400;
             line-height: 27.089px; /* 150% */
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .design_process{
+    .design_head {
+      display: block;
+      border-radius: 20px;
+      border: 0.3px solid #fff;
+      background: #313131;
+      backdrop-filter: blur(17.5px);
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px 30px;
+
+      h1 {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 29.841px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30.02px; /* 100.598% */
+      }
+      span {
+        color: #0dc309;
+      }
+    }
+    .inner_design_process{
+      width: 85%;
+
+      .left_design_process {
+        width: 100%;
+
+        .design_card{
+          padding: 20px;
+          margin-top: -25px;
+
+          .card_header{
+            padding: 0;
+
+            img{
+              width: 10%;
+            }
+
+            h3{
+              font-size: 16px;
+            }
+            .accordion_icon{
+              font-size: 16px;
+            }
+          }
+          .card_content{
+            p{
+              margin-top: 20px;
+              font-size: 14px;
+            }
+          }
+        }
+        .design_header{
+          display: none;
+        }
+      }
+      .right_design_process{
+        width: 100%;
+
+        .design_card{
+          padding: 20px;
+
+          .card_header{
+            padding: 0;
+
+            img{
+              width: 10%;
+            }
+
+            h3{
+              font-size: 16px;
+            }
+            .accordion_icon{
+              font-size: 16px;
+            }
+          }
+          .card_content{
+            p{
+              margin-top: 20px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .special_cards{
+          left: 0;
+
+          .design_card{
+            padding: 20px;
+
+            .card_header{
+              padding: 0;
+
+              img{
+                width: 10%;
+              }
+
+              h3{
+                font-size: 16px;
+              }
+              .accordion_icon{
+                font-size: 16px;
+              }
+            }
+            .card_content{
+              p{
+                margin-top: 20px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .design_process {
+    .design_head {
+      display: block;
+      border-radius: 20px;
+      border: 0.3px solid #fff;
+      background: #313131;
+      backdrop-filter: blur(17.5px);
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px 30px;
+
+      h1 {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 29.841px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30.02px; /* 100.598% */
+      }
+      span {
+        color: #0dc309;
+      }
+    }
+    .inner_design_process {
+      width: 90%;
+      padding: 50px 0;
+      flex-direction: column;
+      row-gap: 20px;
+      .left_design_process {
+        width: 100%;
+
+        .design_card{
+          padding: 20px;
+          margin-top: -25px;
+
+          .card_header{
+            padding: 0;
+
+            img{
+              width: 10%;
+            }
+
+            h3{
+              font-size: 16px;
+            }
+            .accordion_icon{
+              font-size: 16px;
+            }
+          }
+          .card_content{
+            p{
+              margin-top: 20px;
+              font-size: 14px;
+            }
+          }
+        }
+        .design_header{
+          display: none;
+        }
+      }
+      .right_design_process{
+        width: 100%;
+
+        .design_card{
+          padding: 20px;
+
+          .card_header{
+            padding: 0;
+
+            img{
+              width: 10%;
+            }
+
+            h3{
+              font-size: 16px;
+            }
+            .accordion_icon{
+              font-size: 16px;
+            }
+          }
+          .card_content{
+            p{
+              margin-top: 20px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .special_cards{
+          left: 0;
+
+          .design_card{
+            padding: 20px;
+
+            .card_header{
+              padding: 0;
+
+              img{
+                width: 10%;
+              }
+
+              h3{
+                font-size: 16px;
+              }
+              .accordion_icon{
+                font-size: 16px;
+              }
+            }
+            .card_content{
+              p{
+                margin-top: 20px;
+                font-size: 14px;
+              }
+            }
           }
         }
       }

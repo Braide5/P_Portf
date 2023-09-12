@@ -27,6 +27,19 @@
   }
 }
 
+/* Medium Screens */
+@media (max-width: 991px) {
+  .tools{
+    .inner_tools{
+      width: 80%;
+      h1{
+        font-size: 25px;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
 /* Small Screens */
 @media (max-width: 480px) {
   .tools{

@@ -16,7 +16,7 @@ import VisualDesignImage from "./images/visualDesign.png";
 import PrototypingImage from "./images/prototype.png";
 
 const DesignProcess = () => {
-  const [hideBrief, setHideBrief] = useState(false);
+  const [hideBrief, setHideBrief] = useState(true);
   const [hideTesting, setHideTesting] = useState(false);
   const [research, setResearch] = useState(false);
   const [hideStory, setHideStory] = useState(false);
@@ -25,6 +25,9 @@ const DesignProcess = () => {
 
   return (
     <section className="design_process">
+      <div className="design_head">
+        <h1>My Design <span>Process</span></h1>
+      </div>
       <div className="inner_design_process">
         <div className="left_design_process">
           <div className="design_card">

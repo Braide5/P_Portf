@@ -7,6 +7,9 @@ import ProjectImage from "./images/project.png";
 const LiveProjects = () => {
   return (
     <section className="projects">
+      <div className="project_head">
+        <h1>My Live <span>Projects</span></h1>
+      </div>
       <div className="inner_projects">
         <div className="left_project">
           <div className="project_card">

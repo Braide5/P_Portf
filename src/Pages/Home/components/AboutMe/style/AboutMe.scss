@@ -54,6 +54,14 @@
   }
 }
 
+@media (max-width: 991px) {
+  .about_me {
+    .inner_about_me {
+      width: 85%;
+    }
+  }
+}
+
 // Responsiveness starts here
 @media (max-width: 480px) {
   .about_me {
@@ -91,7 +99,7 @@
 
       .about_body {
         p {
-          font-size: 18.06px;
+          font-size: 14px;
         }
       }
     }
