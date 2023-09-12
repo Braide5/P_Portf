@@ -11,7 +11,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import BriefImage from "./images/brief.png";
 import TestingImage from "./images/testing.png";
 import ResearchImage from "./images/research.png";
-import StoryBoardImage from "./images/storyboard.png";
+import StoryBoardImage from "./images/board.png";
 import VisualDesignImage from "./images/visualDesign.png";
 import PrototypingImage from "./images/prototype.png";
 
