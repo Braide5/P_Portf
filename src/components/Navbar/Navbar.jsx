@@ -39,12 +39,12 @@ const Navbar = () => {
             </div>
           </NavLink>
           <nav ref={navRef}>
-            <NavLink to="/" onClick={closeNavbar}>About Me</NavLink>
-            <NavLink to="/services" onClick={closeNavbar}>Works</NavLink>
-            <NavLink to="/programs" onClick={closeNavbar}>Blog</NavLink>
-            <NavLink to="/join_now" onClick={closeNavbar}>
+            <a href="#About_me" onClick={closeNavbar}>About Me</a>
+            <a href="#works" onClick={closeNavbar}>Works</a>
+            <a href="#blog" onClick={closeNavbar}>Blog</a>
+            <a href="#contact" onClick={closeNavbar}>
               <button className="contact_me">Contact Me</button>
-            </NavLink>
+            </a>
             <button
               className="nav-btn nav-close-btn"
               onClick={closeNavbar}

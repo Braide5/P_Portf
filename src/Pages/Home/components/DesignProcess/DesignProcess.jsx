@@ -26,7 +26,9 @@ const DesignProcess = () => {
   return (
     <section className="design_process">
       <div className="design_head">
-        <h1>My Design <span>Process</span></h1>
+        <h1>
+          My Design <span>Process</span>
+        </h1>
       </div>
       <div className="inner_design_process">
         <div className="left_design_process">
@@ -49,9 +51,11 @@ const DesignProcess = () => {
             {hideBrief ? (
               <div className="card_content">
                 <p>
-                  I’m a skilled full stack web developer in Nigeria, with over 3
-                  years of experience in the field. From the beginning of my
-                  career, I have
+                  I begin by breaking down the client's brief, which helps me
+                  not only comprehend their needs but also formulate precise
+                  questions during initial client discussions. This step is
+                  essential in gaining a deeper understanding of the company's
+                  brand, narrative, and character.
                 </p>
               </div>
             ) : null}
@@ -81,9 +85,11 @@ const DesignProcess = () => {
             {hideTesting ? (
               <div className="card_content">
                 <p>
-                  I’m a skilled full stack web developer in Nigeria, with over 3
-                  years of experience in the field. From the beginning of my
-                  career, I have
+                  Once the prototypes are ready, I conduct comprehensive testing
+                  to ensure that the design is not only visually appealing but
+                  also functional and user-friendly. This testing phase helps
+                  identify any potential issues and provides an opportunity for
+                  refinement.
                 </p>
               </div>
             ) : null}
@@ -109,9 +115,9 @@ const DesignProcess = () => {
             {research ? (
               <div className="card_content">
                 <p>
-                  I’m a skilled full stack web developer in Nigeria, with over 3
-                  years of experience in the field. From the beginning of my
-                  career, I have
+                  I conduct in-depth research to explore competitors'
+                  strategies. This enables me to synthesize innovative design
+                  ideas and create a truly unique solution.
                 </p>
               </div>
             ) : null}
@@ -120,7 +126,7 @@ const DesignProcess = () => {
             <div className="design_card">
               <div className="card_header">
                 <img src={StoryBoardImage} alt="StoryBoard Image" />
-                <h3>Story Board</h3>
+                <h3>Mood Board</h3>
                 {hideStory ? (
                   <IoIosArrowDown
                     className="accordion_icon"
@@ -136,9 +142,10 @@ const DesignProcess = () => {
               {hideStory ? (
                 <div className="card_content">
                   <p>
-                    I’m a skilled full stack web developer in Nigeria, with over
-                    3 years of experience in the field. From the beginning of my
-                    career, I have
+                    I curate mood boards, a collaborative tool filled with
+                    industry-specific images, fonts, and inspirations, and my
+                    rough sketches, laying the foundation for initial design
+                    concepts.
                   </p>
                 </div>
               ) : null}
@@ -162,9 +169,10 @@ const DesignProcess = () => {
               {hideVisual ? (
                 <div className="card_content">
                   <p>
-                    I’m a skilled full stack web developer in Nigeria, with over
-                    3 years of experience in the field. From the beginning of my
-                    career, I have
+                    With a solid understanding of the client's brand and
+                    industry landscape, I proceed to the design phase, crafting
+                    visual solutions that align with the established goals and
+                    narrative.
                   </p>
                 </div>
               ) : null}
@@ -189,9 +197,10 @@ const DesignProcess = () => {
             {hidePrototype ? (
               <div className="card_content">
                 <p>
-                  I’m a skilled full stack web developer in Nigeria, with over 3
-                  years of experience in the field. From the beginning of my
-                  career, I have
+                  Following the design phase, I move on to create prototypes
+                  that bring the design concepts to life. These prototypes serve
+                  as a tangible representation of the final product, allowing
+                  for further refinement.
                 </p>
               </div>
             ) : null}

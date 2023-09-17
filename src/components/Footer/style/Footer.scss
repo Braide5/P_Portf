@@ -38,6 +38,8 @@ footer {
   footer {
     .inner_footer {
       width: 85%;
+      justify-content: center;
+      margin: 0 auto;
       padding: 50px 0;
 
       .footer_nav {
@@ -59,6 +61,7 @@ footer {
   footer {
     .inner_footer {
       width: 90%;
+      margin: 0 auto;
       padding: 50px 0;
 
       .footer_logo {

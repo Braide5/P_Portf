@@ -13,35 +13,35 @@ const Blog = () => {
   const [blogPost, setBlogPost] = useState([
     {
       id: 1,
-      link: "Openrepaly.me.come",
-      date: "September 17, 2022 .",
-      title: "Auto-layout & Absolute Positioning",
-      duration: 4,
+      link: "https://medium.com/@zubiduru/how-to-use-auto-layout-in-figma-2224832fa36e",
+      date: "June 19, 2022 .",
+      title: "How to use Auto-layout in Figma",
+      duration: 3,
     },
     {
-      id: 1,
-      link: "Openrepaly.me.come",
-      date: "September 17, 2022 .",
-      title: "Auto-layout & Absolute Positioning",
-      duration: 4,
+      id: 2,
+      link: "https://medium.com/@zubiduru/ux-study-improving-user-experience-in-the-bathroom-a726488f64bf",
+      date: "June 13, 2022 .",
+      title: "How to improve user experience in the bathroom",
+      duration: 3,
     },
     {
-      id: 1,
-      link: "Openrepaly.me.come",
+      id: 3,
+      link: "https://medium.com/@zubiduru/absolute-positioning-in-figma-12eb11fae077",
       date: "September 17, 2022 .",
-      title: "Auto-layout & Absolute Positioning",
-      duration: 4,
+      title: "Absolute Positioning in Figma",
+      duration: 3,
     },
   ]);
   return (
-    <section className="blog">
+    <section className="blog" id="blog">
       <div className="mobile_header">
         <h1>Blogs</h1>
       </div>
       <div className="inner_blog">
         <div className="left_blog">
           {blogPost.map((post) => (
-            <a href="" target="_blank">
+            <a href={post.link} target="_blank">
               <div className="blog_card">
                 <div className="mobile_link">
                   <img src={MobileLink} alt="link" />
@@ -49,15 +49,15 @@ const Blog = () => {
                 <div className="card_content">
                   <div className="left_blog_card">
                     <div className="blog_card_header">
-                      <div className="link">
+                      {/* <div className="link">
                         <p>{post.link}</p>
                         <img src={LinkImage} alt="link" />
-                      </div>
+                      </div> */}
                       <div className="date">
-                        <p>| {post.date}</p>
+                        <p> {post.date}</p>
                       </div>
                     </div>
-                    <h1>{post.title}</h1>
+                    <h1>{post.title.slice(0, 35)}...</h1>
                     <div className="blog_card_bottom">
                       <button>View</button>
                       <div className="time">
@@ -75,11 +75,10 @@ const Blog = () => {
           ))}
         </div>
         <div className="right_blog">
-          <h6>Get in Touch</h6>
           <h1>Blogs</h1>
           <p>
-            I’m a skilled full stack web developer in Nigeria, with over 3 years
-            of experience
+            I also contribute to renowned blogs such as OpenReplay and Medium.
+            Here are some of my published articles:
           </p>
         </div>
       </div>

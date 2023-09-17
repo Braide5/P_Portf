@@ -15,12 +15,12 @@ const Footer = () => {
           <img src={FooterLogo} alt="Logo" />
         </div>
         <div className="footer_nav">
-          <NavLink to="/">About Me</NavLink>
-          <NavLink to="/services">Works</NavLink>
-          <NavLink to="/programs">Blog</NavLink>
-          <NavLink to="/join_now">
+          <a href="#About_me">About Me</a>
+          <a href="#works">Works</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">
             <button className="contact_me footer_contact_me">Contact Me</button>
-          </NavLink>
+          </a>
         </div>
       </div>
     </footer>

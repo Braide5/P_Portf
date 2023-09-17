@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="middle_hero">
           <h6>Hello, It’s me</h6>
           <h1>Azubuike Duru</h1>
-          <h3>Product Designer | Technical Writing</h3>
+          <h3>Product Designer | Technical Writer</h3>
           <p>
             I provide wide range of digital skills. I help business find their
             identity and work flow problems through simplified visual
@@ -50,7 +50,7 @@ const Hero = () => {
             </a>
           </div>
           <div className="middle_buttons">
-            <a href="">
+            <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
               <button className="download_cv">Download CV</button>
             </a>
             <a href="">
