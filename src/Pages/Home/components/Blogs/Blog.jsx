@@ -57,7 +57,7 @@ const Blog = () => {
                         <p> {post.date}</p>
                       </div>
                     </div>
-                    <h1>{post.title.slice(0, 35)}...</h1>
+                    <h1>{post.title.slice(0, 30)}...</h1>
                     <div className="blog_card_bottom">
                       <button>View</button>
                       <div className="time">

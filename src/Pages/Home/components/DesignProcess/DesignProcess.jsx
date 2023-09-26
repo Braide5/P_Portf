@@ -66,8 +66,8 @@ const DesignProcess = () => {
               <span>Process</span>
             </h1>
           </div>
-          <div className="design_card">
-            <div className="card_header">
+          <div className="design_card hide_for_mobile">
+            <div className="card_header ">
               <img src={TestingImage} alt="Testing Image" />
               <h3>Testing</h3>
               {hideTesting ? (
@@ -201,6 +201,34 @@ const DesignProcess = () => {
                   that bring the design concepts to life. These prototypes serve
                   as a tangible representation of the final product, allowing
                   for further refinement.
+                </p>
+              </div>
+            ) : null}
+          </div>
+          <div className="design_card last-design">
+            <div className="card_header">
+              <img src={TestingImage} alt="Testing Image" />
+              <h3>Testing</h3>
+              {hideTesting ? (
+                <IoIosArrowDown
+                  className="accordion_icon"
+                  onClick={() => setHideTesting(!hideTesting)}
+                />
+              ) : (
+                <IoIosArrowUp
+                  className="accordion_icon"
+                  onClick={() => setHideTesting(!hideTesting)}
+                />
+              )}
+            </div>
+            {hideTesting ? (
+              <div className="card_content">
+                <p>
+                  Once the prototypes are ready, I conduct comprehensive testing
+                  to ensure that the design is not only visually appealing but
+                  also functional and user-friendly. This testing phase helps
+                  identify any potential issues and provides an opportunity for
+                  refinement.
                 </p>
               </div>
             ) : null}

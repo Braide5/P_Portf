@@ -62,6 +62,49 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .about_me {
+    .inner_about_me {
+      width: 90%;
+      padding: 50px 0;
+
+      .about_header {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 12px;
+        justify-content: center;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background: #313131;
+        border: 0.3px solid #fff;
+        backdrop-filter: blur(17.5px);
+        .left_header {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .right_header {
+          row-gap: 0;
+          column-gap: 5px;
+          align-items: center;
+          flex-direction: row;
+
+          h1 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .about_body {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 // Responsiveness starts here
 @media (max-width: 480px) {
   .about_me {

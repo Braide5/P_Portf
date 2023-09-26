@@ -31,9 +31,9 @@ const Hero = () => {
           <h1>Azubuike Duru</h1>
           <h3>Product Designer | Technical Writer</h3>
           <p>
-            I provide wide range of digital skills. I help business find their
-            identity and work flow problems through simplified visual
-            interaction.
+            I offer a diverse range of digital skills, assisting businesses in
+            defining their identity and addressing design challenges through
+            intuitive visual solutions.
           </p>
           <div className="left_hero mobile_links">
             <a href="">
