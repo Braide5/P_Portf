@@ -3,6 +3,12 @@ import "./style/LiveProjects.scss";
 
 // Images
 import ProjectImage from "./images/project.png";
+import CLoudnotteImage from "./images/cloudnotte.jpg";
+import soromImage from "./images/sorom.jpg";
+import AuntyKakaImage from "./images/auntykaka.jpg";
+
+// Navlink
+import { NavLink } from "react-router-dom";
 
 const LiveProjects = () => {
   return (
@@ -14,25 +20,24 @@ const LiveProjects = () => {
       </div>
       <div className="inner_projects">
         <div className="left_project">
-          <div className="project_card">
-            <div className="project_header">
-              <div className="left_header">
-                <h3>Cloudnotte Revamp</h3>
-                <span>Sass Project</span>
+          <NavLink
+            to="https://cloudnotte.com/"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project_card">
+              <div className="project_header">
+                <div className="left_header">
+                  <h3>Cloudnotte</h3>
+                  <span>Admin Dashboard</span>
+                </div>
               </div>
-              <div className="right_header">
-                <a href="https://cloudnotte.com/" target="_blank">
-                  <button>View</button>
-                </a>
-              </div>
+              <p>
+                Easily manage all activities involving students, admins, all in
+                this dashboard.
+              </p>
+              <img src={CLoudnotteImage} alt="CLoudnotteImage" />
             </div>
-            <p>
-              I redesigned the Cloudnotte website and the admin/student
-              dashboard, significantly enhancing user accessibility for both
-              students and teachers.
-            </p>
-            <img src={ProjectImage} alt="Project Image" />
-          </div>
+          </NavLink>
           <div className="project_bottom">
             <h1>My Live</h1>
             <h1>
@@ -45,42 +50,33 @@ const LiveProjects = () => {
           </div>
         </div>
         <div className="left_project">
-          <div className="project_card">
-            <div className="project_header">
-              <div className="left_header">
-                <h3>Admin Dashboard</h3>
-                <span>Sass Project</span>
+          <NavLink to="" style={{ textDecoration: "none" }}>
+            <div className="project_card">
+              <div className="project_header">
+                <div className="left_header">
+                  <h3>S0ROM</h3>
+                  <span>Travel Website and App</span>
+                </div>
               </div>
-              <div className="right_header">
-                <a href="" target="_blank">
-                  <button>View</button>
-                </a>
-              </div>
+              <p>
+                Discover, plan, and experience the world with ease - Your
+                all-in-one travel companion.
+              </p>
+              <img src={soromImage} alt="soromImage" />
             </div>
-            <p>
-              I’m a skilled full stack web developer in Nigeria, with over 3
-              years of experience
-            </p>
-            <img src={ProjectImage} alt="Project Image" />
-          </div>
-          <div className="project_card">
-            <div className="project_header">
-              <div className="left_header">
-                <h3>Admin Dashboard</h3>
-                <span>Sass Project</span>
+          </NavLink>
+          <NavLink to="" style={{ textDecoration: "none" }}>
+            <div className="project_card">
+              <div className="project_header">
+                <div className="left_header">
+                  <h3>Aunty’s KAKA foundation</h3>
+                  <span>NGO Website</span>
+                </div>
               </div>
-              <div className="right_header">
-                <a href="" target="_blank">
-                  <button>View</button>
-                </a>
-              </div>
+              <p>Empowering Young minds through education and awreness</p>
+              <img src={AuntyKakaImage} alt="AuntyKakaImage" />
             </div>
-            <p>
-              I’m a skilled full stack web developer in Nigeria, with over 3
-              years of experience
-            </p>
-            <img src={ProjectImage} alt="Project Image" />
-          </div>
+          </NavLink>
         </div>
       </div>
     </section>

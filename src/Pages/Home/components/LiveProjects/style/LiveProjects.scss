@@ -23,6 +23,7 @@
         border-radius: 18.06px;
         border: 0.903px solid rgba(13, 195, 9, 0.46);
         box-shadow: 0px 9.02983px 0.45149px 2.03171px rgba(51, 51, 51, 0.25);
+      
 
         .project_header {
           display: flex;
@@ -48,23 +49,6 @@
               line-height: 35px; /* 218.75% */
             }
           }
-          .right_header {
-            button {
-              border-radius: 40px;
-              background: transparent;
-              color: #0dc309;
-              font-family: "Poppins", sans-serif;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              border: 2px solid #0dc309;
-              outline: none;
-              cursor: pointer;
-              margin-top: -35px;
-              padding: 10px 25px;
-            }
-          }
         }
 
         p {
@@ -75,10 +59,12 @@
           font-style: normal;
           font-weight: 400;
           line-height: 27.089px; /* 169.309% */
+          text-decoration: none;
         }
         img {
           height: 317px;
           width: 100%;
+          border-radius: 20px;
         }
       }
 
@@ -129,6 +115,7 @@
 /* Medium Screens */
 @media (max-width: 991px) {
   .projects {
+    padding-top: 50px;
     .project_head {
       display: block;
       border-radius: 20px;

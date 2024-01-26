@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <section style={{width: "100%",overflowX: "hidden"}}>
       <Hero/>
-      <Tools/>
-      <DesignProcess/>
       <LiveProjects/>
-      <GetInTouch/>
+      <DesignProcess/>
+      {/* <GetInTouch/> */}
       <Blog/>
       <AboutMe/>
+      <Tools/>
     </section>
   )
 }
