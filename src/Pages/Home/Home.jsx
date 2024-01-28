@@ -6,6 +6,7 @@ import LiveProjects from "./components/LiveProjects/LiveProjects";
 import Tools from "./components/Tools/Tools";
 import Blog from "./components/Blogs/Blog";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <DesignProcess/>
       {/* <GetInTouch/> */}
       <Blog/>
+      <Testimonial/>
       <AboutMe/>
       <Tools/>
     </section>

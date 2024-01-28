@@ -226,3 +226,72 @@ header .nav-btn {
     height: 120px;
   }
 }
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  header {
+    height: 5vh;
+    overflow-y: hidden;
+  }
+  header .nav-btn,
+  .reg-incase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .reg-incase button {
+    padding: 5px 50px 5px 50px;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #222;
+    color: #ffffff;
+    transition: 1s;
+    transform: translateX(-200%);
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  .reg {
+    display: none;
+  }
+  .join_now button {
+    display: none;
+  }
+  .last_point {
+    display: block;
+  }
+  .mobile_join_us {
+    display: block;
+    background-color: #ff5c00;
+    border-radius: 35px;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}

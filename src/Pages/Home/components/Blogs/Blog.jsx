@@ -3,6 +3,9 @@ import { useState } from "react";
 // stylesheet
 import "./style/Blogs.scss";
 
+// Navlink
+import { NavLink } from "react-router-dom";
+
 // images
 import LinkImage from "./images/Link.png";
 import ClockImage from "./images/Clock.png";
@@ -41,7 +44,7 @@ const Blog = () => {
       <div className="inner_blog">
         <div className="left_blog">
           {blogPost.map((post) => (
-            <a href={post.link} target="_blank">
+            <NavLink to={post.link} target="_blank" key={post.id}>
               <div className="blog_card">
                 <div className="mobile_link">
                   <img src={MobileLink} alt="link" />
@@ -71,7 +74,7 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </NavLink>
           ))}
         </div>
         <div className="right_blog">

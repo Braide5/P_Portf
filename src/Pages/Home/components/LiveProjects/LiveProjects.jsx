@@ -22,6 +22,7 @@ const LiveProjects = () => {
         <div className="left_project">
           <NavLink
             to="https://cloudnotte.com/"
+            target="_blank"
             style={{ textDecoration: "none" }}
           >
             <div className="project_card">
@@ -50,7 +51,7 @@ const LiveProjects = () => {
           </div>
         </div>
         <div className="left_project">
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="" target="_blank" style={{ textDecoration: "none" }}>
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
@@ -65,7 +66,7 @@ const LiveProjects = () => {
               <img src={soromImage} alt="soromImage" />
             </div>
           </NavLink>
-          <NavLink to="" style={{ textDecoration: "none" }}>
+          <NavLink to="" target="_blank" style={{ textDecoration: "none" }}>
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">

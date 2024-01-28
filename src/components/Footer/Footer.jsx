@@ -22,16 +22,16 @@ const Footer = () => {
           <p>Azubuiike Duru Design 2023</p>
         </div>
         <div className="footer-socials">
-          <NavLink to="">
+          <NavLink to="" target="_blank">
             <img src={BehanceLogo} alt="BehanceLogo" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="" target="_blank">
             <img src={LinkedInLogo} alt="LinkedInLogo" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="" target="_blank">
             <img src={TwitterLogo} alt="TwitterLogo" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="" target="_blank">
             <img src={MediumLogo} alt="MediumLogo" />
           </NavLink>
         </div>
