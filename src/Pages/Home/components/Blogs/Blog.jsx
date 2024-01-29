@@ -7,10 +7,10 @@ import "./style/Blogs.scss";
 import { NavLink } from "react-router-dom";
 
 // images
-import LinkImage from "./images/Link.png";
 import ClockImage from "./images/Clock.png";
 import BlogImage from "./images/BlogImage.png";
 import MobileLink from "./images/arrow-left.png";
+import PointImage from "./images/points1.svg";
 
 const Blog = () => {
   const [blogPost, setBlogPost] = useState([
@@ -52,17 +52,12 @@ const Blog = () => {
                 <div className="card_content">
                   <div className="left_blog_card">
                     <div className="blog_card_header">
-                      {/* <div className="link">
-                        <p>{post.link}</p>
-                        <img src={LinkImage} alt="link" />
-                      </div> */}
                       <div className="date">
                         <p> {post.date}</p>
                       </div>
                     </div>
                     <h1>{post.title.slice(0, 30)}...</h1>
                     <div className="blog_card_bottom">
-                      <button>View</button>
                       <div className="time">
                         <img src={ClockImage} alt="time" />
                         <p>{post.duration}min. read</p>
@@ -78,11 +73,18 @@ const Blog = () => {
           ))}
         </div>
         <div className="right_blog">
+          <span>Get in Touch</span>
           <h1>Blogs</h1>
           <p>
             I also contribute to renowned blogs such as OpenReplay and Medium.
             Here are some of my published articles:
           </p>
+          <div className="view-more-blogs">
+            <NavLink to="https://medium.com/@zubiduru">
+              <button>View more Blogs</button>
+            </NavLink>
+            <img src={PointImage} alt="point" />
+          </div>
         </div>
       </div>
     </section>

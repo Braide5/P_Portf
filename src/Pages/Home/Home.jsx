@@ -1,6 +1,5 @@
 // components
 import DesignProcess from "./components/DesignProcess/DesignProcess";
-import GetInTouch from "./components/GetInTouch/GetInTouch";
 import Hero from "./components/Hero/Hero";
 import LiveProjects from "./components/LiveProjects/LiveProjects";
 import Tools from "./components/Tools/Tools";
@@ -14,7 +13,6 @@ const Home = () => {
       <Hero/>
       <LiveProjects/>
       <DesignProcess/>
-      {/* <GetInTouch/> */}
       <Blog/>
       <Testimonial/>
       <AboutMe/>

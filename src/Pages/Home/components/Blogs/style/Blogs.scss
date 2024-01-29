@@ -72,6 +72,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 31.604px; /* 143.656% */
+
               }
               .blog_card_bottom {
                 display: flex;
@@ -127,7 +128,7 @@
       flex-direction: column;
       row-gap: 30px;
 
-      h6 {
+      span {
         color: #949494;
         font-family: "Poppins";
         font-size: 18px;
@@ -150,8 +151,31 @@
         font-size: 18.06px;
         font-style: normal;
         font-weight: 400;
-        line-height: 27.089px; 
+        line-height: 27.089px;
         text-align: left;
+      }
+      .view-more-blogs {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        margin-top: 50px;
+        button {
+          color: #0dc309;
+          font-family: Poppins;
+          font-size: 18.06px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding: 12px 28px;
+          border-radius: 40px;
+          border: 2px solid #0dc309;
+          background: transparent;
+          outline-color: transparent;
+          cursor: pointer;
+        }
+        img{
+          cursor: pointer;
+        }
       }
     }
   }
@@ -215,6 +239,19 @@
       }
       .right_blog {
         width: 50%;
+        p{
+          font-size: 12px;
+          line-height: normal;
+        }
+        h1{
+          display: none;
+        }
+        .view-more-blogs{
+          margin-top: 10px;
+          button{
+            display: none;
+          }
+        }
       }
     }
   }

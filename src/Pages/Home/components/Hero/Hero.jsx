@@ -16,16 +16,16 @@ const Hero = () => {
     <section className="hero">
       <div className="inner_hero">
         <div className="left_hero">
-          <NavLink to="">
+          <NavLink to="https://www.behance.net/azubuikeduru">
             <img src={Behance} alt="Behance" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="https://www.linkedin.com/in/azubuike-duru-2b7a43229">
             <img src={LinkedIn} alt="LinkedIn" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="https://www.twitter.com/AzubuikeDuru6">
             <img src={Twitter} alt="Twitter" />
           </NavLink>
-          <NavLink to="">
+          <NavLink to="https://medium.com/@zubiduru">
             <img src={Medium} alt="Medium" />
           </NavLink>
         </div>
@@ -56,7 +56,7 @@ const Hero = () => {
             <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
               <button className="download_cv">Download CV</button>
             </a>
-            <a href="">
+            <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch">
               <button className="message_me">Message Me</button>
             </a>
           </div>

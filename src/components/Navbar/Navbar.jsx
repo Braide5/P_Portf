@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Navbar">
+    <div className="Navbar" id="top">
       <div className="container">
         <header>
           <NavLink to="/" style={{ textDecoration: "none" }}>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <a href="#About_me" onClick={closeNavbar}>About Me</a>
             <a href="#works" onClick={closeNavbar}>Works</a>
             <a href="#blog" onClick={closeNavbar}>Blog</a>
-            <a href="#contact" onClick={closeNavbar}>
+            <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch" onClick={closeNavbar}>
               <button className="contact_me">Contact Me</button>
             </a>
             <button

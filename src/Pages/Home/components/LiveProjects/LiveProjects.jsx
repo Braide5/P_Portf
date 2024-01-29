@@ -2,10 +2,10 @@
 import "./style/LiveProjects.scss";
 
 // Images
-import ProjectImage from "./images/project.png";
 import CLoudnotteImage from "./images/cloudnotte.jpg";
 import soromImage from "./images/sorom.jpg";
 import AuntyKakaImage from "./images/auntykaka.jpg";
+import PointImage from "./images/points1.svg";
 
 // Navlink
 import { NavLink } from "react-router-dom";
@@ -48,10 +48,19 @@ const LiveProjects = () => {
               Discover my recent design ventures in action – where creativity
               meets functionality, and user experiences come to life
             </p>
+            <div className="view-more-projects">
+              <NavLink to="https://www.behance.net/azubuikeduru"></NavLink>
+              <button>View more Projects</button>
+              <img src={PointImage} alt="point" />
+            </div>
           </div>
         </div>
         <div className="left_project">
-          <NavLink to="https://biasorom-web.vercel.app/" target="_blank" style={{ textDecoration: "none" }}>
+          <NavLink
+            to="https://biasorom-web.vercel.app/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
@@ -66,7 +75,11 @@ const LiveProjects = () => {
               <img src={soromImage} alt="soromImage" />
             </div>
           </NavLink>
-          <NavLink to="https://auntykaka.org/" target="_blank" style={{ textDecoration: "none" }}>
+          <NavLink
+            to="https://auntykaka.org/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
