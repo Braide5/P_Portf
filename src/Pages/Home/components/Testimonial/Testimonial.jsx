@@ -59,7 +59,7 @@ const Testimonial = () => {
     const intervalId = setInterval(() => {
       // Call updateIndex to move to the next slider every 3 seconds
       updateIndex(currentIndex + 1);
-    }, 3000);
+    }, 10000);
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
