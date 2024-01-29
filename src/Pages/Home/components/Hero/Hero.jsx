@@ -30,34 +30,34 @@ const Hero = () => {
           </NavLink>
         </div>
         <div className="middle_hero">
-          <h6>Hello, It’s me</h6>
-          <h1>Azubuike Duru</h1>
-          <h3>Product Designer | Technical Writer</h3>
+          <h6>Hello, It’s me Azubuike</h6>
+          <h1>Product Designer &</h1>
+          <h1>Technical Writer</h1>
           <p>
-            I offer a diverse range of digital skills, assisting businesses in
-            defining their identity and addressing design challenges through
-            intuitive visual solutions.
+            I provide wide range of digital skills. I help business find their
+            identity and work flow problems through simplified visual
+            interaction.
           </p>
           <div className="left_hero mobile_links">
-          <NavLink to="">
-            <img src={Behance} alt="Behance" />
-          </NavLink>
-          <NavLink to="">
-            <img src={LinkedIn} alt="LinkedIn" />
-          </NavLink>
-          <NavLink to="">
-            <img src={Twitter} alt="Twitter" />
-          </NavLink>
-          <NavLink to="">
-            <img src={Medium} alt="Medium" />
-          </NavLink>
+            <NavLink to="">
+              <img src={Behance} alt="Behance" />
+            </NavLink>
+            <NavLink to="">
+              <img src={LinkedIn} alt="LinkedIn" />
+            </NavLink>
+            <NavLink to="">
+              <img src={Twitter} alt="Twitter" />
+            </NavLink>
+            <NavLink to="">
+              <img src={Medium} alt="Medium" />
+            </NavLink>
           </div>
           <div className="middle_buttons">
-            <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
-              <button className="download_cv">Download CV</button>
-            </a>
             <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch">
-              <button className="message_me">Message Me</button>
+              <button className="download_cv" >Get in touch</button>
+            </a>
+            <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
+              <button className="message_me">Download CV</button>
             </a>
           </div>
         </div>

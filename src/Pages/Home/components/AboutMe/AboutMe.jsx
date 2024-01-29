@@ -20,7 +20,7 @@ const AboutMe = () => {
         <div className="about_body">
           <p>
             You may already know me as Azubuike Duru, a dedicated product
-            designer with over 2 years of experience crafting inventive
+            designer with over 3 years of experience crafting inventive
             solutions and dynamic interface designs to enhance user experiences.
           </p>
           <p>

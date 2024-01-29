@@ -51,13 +51,13 @@ nav a:focus {
 }
 
 .contact_me {
-  outline: none;
-  border: none;
+  outline-color: transparent;
   border-radius: 40px;
-  background: #0dc309;
+  border: 1px solid #0DC309;
   cursor: pointer;
   padding: 15px 30px;
-  color: #fff;
+  color: #0DC309;
+  background: transparent;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;

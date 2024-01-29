@@ -43,7 +43,7 @@ const Navbar = () => {
             <a href="#works" onClick={closeNavbar}>Works</a>
             <a href="#blog" onClick={closeNavbar}>Blog</a>
             <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch" onClick={closeNavbar}>
-              <button className="contact_me">Contact Me</button>
+              <button className="contact_me">Message Me</button>
             </a>
             <button
               className="nav-btn nav-close-btn"
