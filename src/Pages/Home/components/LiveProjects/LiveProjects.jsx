@@ -51,7 +51,7 @@ const LiveProjects = () => {
           </div>
         </div>
         <div className="left_project">
-          <NavLink to="" target="_blank" style={{ textDecoration: "none" }}>
+          <NavLink to="https://biasorom-web.vercel.app/" target="_blank" style={{ textDecoration: "none" }}>
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
@@ -66,7 +66,7 @@ const LiveProjects = () => {
               <img src={soromImage} alt="soromImage" />
             </div>
           </NavLink>
-          <NavLink to="" target="_blank" style={{ textDecoration: "none" }}>
+          <NavLink to="https://auntykaka.org/" target="_blank" style={{ textDecoration: "none" }}>
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
