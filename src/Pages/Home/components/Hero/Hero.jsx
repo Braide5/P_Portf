@@ -53,7 +53,7 @@ const Hero = () => {
             </NavLink>
           </div>
           <div className="middle_buttons">
-            <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch">
+            <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch" target="_blank">
               <button className="download_cv">Get in touch</button>
             </a>
             <a href={cv}>
