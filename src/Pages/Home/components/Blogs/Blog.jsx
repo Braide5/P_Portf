@@ -102,7 +102,7 @@ const Blog = () => {
         </div>
       </div>
         <NavLink
-          to="https://www.behance.net/azubuikeduru"
+          to="https://medium.com/@zubiduru"
           target="_blank"
           style={{ textDecoration: "none" }}
         >
