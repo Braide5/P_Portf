@@ -12,6 +12,7 @@ import LinkedIn from "./images/Linkedin.svg";
 import HeroImage from "./images/Hero.png";
 
 const Hero = () => {
+  const cv = "https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit";
   return (
     <section className="hero">
       <div className="inner_hero">
@@ -55,8 +56,8 @@ const Hero = () => {
             <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch">
               <button className="download_cv">Get in touch</button>
             </a>
-            <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
-              <button className="message_me">Download CV</button>
+            <a href={cv}>
+              <button className="message_me">Check CV</button>
             </a>
           </div>
         </div>

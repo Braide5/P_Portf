@@ -23,6 +23,61 @@ const DesignProcess = () => {
   const [hideVisual, setHideVisual] = useState(false);
   const [hidePrototype, setHidePrototype] = useState(false);
 
+  // function for hide brief
+  const handleHideBrief = () => {
+    setHideBrief(!hideBrief);
+    setHideTesting(false);
+    setResearch(false);
+    setHideStory(false);
+    setHideVisual(false);
+    setHidePrototype(false);
+  };
+
+  const handleHideTesting = () => {
+    setHideTesting(!hideTesting);
+    setHideBrief(false);
+    setResearch(false);
+    setHideStory(false);
+    setHideVisual(false);
+    setHidePrototype(false);
+  };
+
+  const handleHideResearch = () => {
+    setResearch(!research);
+    setHideTesting(false);
+    setHideBrief(false);
+    setHideStory(false);
+    setHideVisual(false);
+    setHidePrototype(false);
+  };
+
+  const handleHideStory = () => {
+    setHideStory(!hideStory);
+    setResearch(false);
+    setHideTesting(false);
+    setHideBrief(false);
+    setHideVisual(false);
+    setHidePrototype(false);
+  };
+
+  const handleHideVisual = () => {
+    setHideVisual(!hideVisual);
+    setResearch(false);
+    setHideTesting(false);
+    setHideBrief(false);
+    setHideStory(false);
+    setHidePrototype(false);
+  };
+
+  const handleHidePrototype = () => {
+    setHideVisual(false);
+    setResearch(false);
+    setHideTesting(false);
+    setHideBrief(false);
+    setHideStory(false);
+    setHidePrototype(!hidePrototype);
+  };
+
   return (
     <section className="design_process">
       <div className="design_head">
@@ -39,12 +94,12 @@ const DesignProcess = () => {
               {hideBrief ? (
                 <IoIosArrowDown
                   className="accordion_icon"
-                  onClick={() => setHideBrief(!hideBrief)}
+                  onClick={handleHideBrief}
                 />
               ) : (
                 <IoIosArrowUp
                   className="accordion_icon"
-                  onClick={() => setHideBrief(!hideBrief)}
+                  onClick={handleHideBrief}
                 />
               )}
             </div>
@@ -73,12 +128,12 @@ const DesignProcess = () => {
               {hideTesting ? (
                 <IoIosArrowDown
                   className="accordion_icon"
-                  onClick={() => setHideTesting(!hideTesting)}
+                  onClick={handleHideTesting}
                 />
               ) : (
                 <IoIosArrowUp
                   className="accordion_icon"
-                  onClick={() => setHideTesting(!hideTesting)}
+                  onClick={handleHideTesting}
                 />
               )}
             </div>
@@ -103,12 +158,12 @@ const DesignProcess = () => {
               {research ? (
                 <IoIosArrowDown
                   className="accordion_icon"
-                  onClick={() => setResearch(!research)}
+                  onClick={handleHideResearch}
                 />
               ) : (
                 <IoIosArrowUp
                   className="accordion_icon"
-                  onClick={() => setResearch(!research)}
+                  onClick={handleHideResearch}
                 />
               )}
             </div>
@@ -130,12 +185,12 @@ const DesignProcess = () => {
                 {hideStory ? (
                   <IoIosArrowDown
                     className="accordion_icon"
-                    onClick={() => setHideStory(!hideStory)}
+                    onClick={handleHideStory}
                   />
                 ) : (
                   <IoIosArrowUp
                     className="accordion_icon"
-                    onClick={() => setHideStory(!hideStory)}
+                    onClick={handleHideStory}
                   />
                 )}
               </div>
@@ -157,12 +212,12 @@ const DesignProcess = () => {
                 {hideVisual ? (
                   <IoIosArrowDown
                     className="accordion_icon"
-                    onClick={() => setHideVisual(!hideVisual)}
+                    onClick={handleHideVisual}
                   />
                 ) : (
                   <IoIosArrowUp
                     className="accordion_icon"
-                    onClick={() => setHideVisual(!hideVisual)}
+                    onClick={handleHideVisual}
                   />
                 )}
               </div>
@@ -185,12 +240,12 @@ const DesignProcess = () => {
               {hidePrototype ? (
                 <IoIosArrowDown
                   className="accordion_icon"
-                  onClick={() => setHidePrototype(!hidePrototype)}
+                  onClick={handleHidePrototype}
                 />
               ) : (
                 <IoIosArrowUp
                   className="accordion_icon"
-                  onClick={() => setHidePrototype(!hidePrototype)}
+                  onClick={handleHidePrototype}
                 />
               )}
             </div>
@@ -212,12 +267,12 @@ const DesignProcess = () => {
               {hideTesting ? (
                 <IoIosArrowDown
                   className="accordion_icon"
-                  onClick={() => setHideTesting(!hideTesting)}
+                  onClick={handleHideTesting}
                 />
               ) : (
                 <IoIosArrowUp
                   className="accordion_icon"
-                  onClick={() => setHideTesting(!hideTesting)}
+                  onClick={handleHideTesting}
                 />
               )}
             </div>
