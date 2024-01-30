@@ -52,7 +52,7 @@ const LiveProjects = () => {
             </p>
             <div className="view-more-projects">
               <NavLink to="https://www.behance.net/azubuikeduru">
-              <button>View more Projects</button>
+                <button>View more Projects</button>
               </NavLink>
               <img src={PointImage} alt="point" />
             </div>
@@ -95,11 +95,15 @@ const LiveProjects = () => {
             </div>
           </NavLink>
         </div>
-        <NavLink to="https://www.behance.net/azubuikeduru" target="_blank" style={{textDecoration: "none"}}>
-        <div className="mobile-see-more">
-          <p>See More</p>
-          <img src={Arrow} alt="Arrow" />
-      </div>
+        <NavLink
+          to="https://www.behance.net/azubuikeduru"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="mobile-see-more">
+            <p>See More</p>
+            <img src={Arrow} alt="Arrow" />
+          </div>
         </NavLink>
       </div>
     </section>

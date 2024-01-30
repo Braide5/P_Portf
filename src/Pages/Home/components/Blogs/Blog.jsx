@@ -8,32 +8,42 @@ import { NavLink } from "react-router-dom";
 
 // images
 import ClockImage from "./images/Clock.png";
-import BlogImage from "./images/BlogImage.png";
 import MobileLink from "./images/arrow-left.png";
+import Arrow from "./images/Arrow.svg";
+import LInkIcon from "./images/Link.png";
 import PointImage from "./images/points1.svg";
+import BlogImage1 from "./images/Blog1.jpg";
+import BlogImage2 from "./images/Blog2.jpg";
+import BlogImage3 from "./images/Blog3.jpg";
 
 const Blog = () => {
   const [blogPost, setBlogPost] = useState([
     {
       id: 1,
-      link: "https://medium.com/@zubiduru/how-to-use-auto-layout-in-figma-2224832fa36e",
-      date: "June 19, 2022 .",
-      title: "How to use Auto-layout in Figma",
-      duration: 3,
+      link: "https://blog.openreplay.com/three-plugins-to-convert-your-figma-designs-into-code/",
+      date: "Nov 9, 2023 .",
+      title: "From Figma to Code-3 Plugins",
+      blog: "Openrepaly.me.com",
+      image: BlogImage1,
+      duration: 11,
     },
     {
       id: 2,
-      link: "https://medium.com/@zubiduru/ux-study-improving-user-experience-in-the-bathroom-a726488f64bf",
-      date: "June 13, 2022 .",
-      title: "How to improve user experience in the bathroom",
-      duration: 3,
+      link: "https://azubuike.hashnode.dev/how-to-create-client-side-form-modal-and-validate-it-using-javascript",
+      date: "Jan 6, 2022 .",
+      title: "Form Validate with Javascript",
+      blog: "Hashnode.com",
+      image: BlogImage2,
+      duration: 4,
     },
     {
       id: 3,
-      link: "https://medium.com/@zubiduru/absolute-positioning-in-figma-12eb11fae077",
-      date: "September 17, 2022 .",
-      title: "Absolute Positioning in Figma",
-      duration: 3,
+      link: "https://medium.com/design-bootcamp/my-whiteboard-interview-was-horrible-learn-from-it-5c00b2246ed5",
+      date: "December 11, 2023 .",
+      title: "My Horrible Whiteboard Interview",
+      blog: "Medium.com",
+      image: BlogImage3,
+      duration: 4,
     },
   ]);
   return (
@@ -52,8 +62,12 @@ const Blog = () => {
                 <div className="card_content">
                   <div className="left_blog_card">
                     <div className="blog_card_header">
+                      <div className="link">
+                        <p>{post.blog}</p>
+                        <img src={LInkIcon} alt="Link" />
+                      </div>
                       <div className="date">
-                        <p> {post.date}</p>
+                        <p>| {post.date}</p>
                       </div>
                     </div>
                     <h1>{post.title.slice(0, 30)}...</h1>
@@ -65,7 +79,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <div className="right_blog_card">
-                    <img src={BlogImage} alt="Blog Image" />
+                    <img src={post.image} alt="Blog Image" />
                   </div>
                 </div>
               </div>
@@ -87,6 +101,16 @@ const Blog = () => {
           </div>
         </div>
       </div>
+        <NavLink
+          to="https://www.behance.net/azubuikeduru"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="mobile-blog-see-more">
+            <p>See More</p>
+            <img src={Arrow} alt="Arrow" />
+          </div>
+        </NavLink>
     </section>
   );
 };
