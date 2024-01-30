@@ -34,9 +34,8 @@ const Hero = () => {
           <h1>Product Designer &</h1>
           <h1>Technical Writer</h1>
           <p>
-            I provide wide range of digital skills. I help business find their
-            identity and work flow problems through simplified visual
-            interaction.
+            I simplify user experiences through intuitive visual design
+            interactions.
           </p>
           <div className="left_hero mobile_links">
             <NavLink to="">
@@ -54,7 +53,7 @@ const Hero = () => {
           </div>
           <div className="middle_buttons">
             <a href="mailto:duruazubuike2019@gmail.com?subject=Get%20in%20touch">
-              <button className="download_cv" >Get in touch</button>
+              <button className="download_cv">Get in touch</button>
             </a>
             <a href="https://docs.google.com/document/d/1LbI_FQKM3X7UXPnmPemReIWe-voGbOGwUvK7YzMzKNI/edit">
               <button className="message_me">Download CV</button>

@@ -7,6 +7,8 @@ import soromImage from "./images/sorom.jpg";
 import AuntyKakaImage from "./images/auntykaka.jpg";
 import PointImage from "./images/points1.svg";
 
+import Arrow from "./images/Arrow.svg";
+
 // Navlink
 import { NavLink } from "react-router-dom";
 
@@ -49,8 +51,9 @@ const LiveProjects = () => {
               meets functionality, and user experiences come to life
             </p>
             <div className="view-more-projects">
-              <NavLink to="https://www.behance.net/azubuikeduru"></NavLink>
+              <NavLink to="https://www.behance.net/azubuikeduru">
               <button>View more Projects</button>
+              </NavLink>
               <img src={PointImage} alt="point" />
             </div>
           </div>
@@ -92,6 +95,12 @@ const LiveProjects = () => {
             </div>
           </NavLink>
         </div>
+        <NavLink to="https://www.behance.net/azubuikeduru" target="_blank" style={{textDecoration: "none"}}>
+        <div className="mobile-see-more">
+          <p>See More</p>
+          <img src={Arrow} alt="Arrow" />
+      </div>
+        </NavLink>
       </div>
     </section>
   );
