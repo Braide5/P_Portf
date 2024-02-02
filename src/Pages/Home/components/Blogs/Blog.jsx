@@ -11,13 +11,18 @@ import ClockImage from "./images/Clock.png";
 import MobileLink from "./images/arrow-left.png";
 import Arrow from "./images/Arrow.svg";
 import LInkIcon from "./images/Link.png";
+import BackwardIcon from "./images/Backward.svg";
+import ForwardIcon from "./images/Forward.svg";
 import PointImage from "./images/points1.svg";
 import BlogImage1 from "./images/Blog1.jpg";
 import BlogImage2 from "./images/Blog2.jpg";
 import BlogImage3 from "./images/Blog3.jpg";
+import BlogImage4 from "./images/Blog4.jpg";
+import BlogImage5 from "./images/Blog5.jpg";
+import BlogImage6 from "./images/Blog6.jpg";
 
 const Blog = () => {
-  const [blogPost, setBlogPost] = useState([
+  const blogPost = [
     {
       id: 1,
       link: "https://blog.openreplay.com/three-plugins-to-convert-your-figma-designs-into-code/",
@@ -45,7 +50,46 @@ const Blog = () => {
       image: BlogImage3,
       duration: 4,
     },
-  ]);
+    {
+      id: 4,
+      link: "https://dev.to/azubuikeduru/choosing-between-css-transition-and-animation-a-ux-perspective-2n0f",
+      date: "December 17, 2024.",
+      title: "UX Choice: Transition VS Animation",
+      blog: "Dev.to",
+      image: BlogImage4,
+      duration: 5,
+    },
+    {
+      id: 5,
+      link: "https://medium.com/@zubiduru/beginner-approach-to-variants-in-figma-2c298ddf58b4",
+      date: "June 17, 2022 .",
+      title: "Beginner Approach: Figma Variants",
+      blog: "Medium.com",
+      image: BlogImage5,
+      duration: 4,
+    },
+    {
+      id: 6,
+      link: "https://medium.com/@zubiduru/ux-study-improving-user-experience-in-the-bathroom-a726488f64bf",
+      date: "July 13, 2022 .",
+      title: "UX Case: Improving UX in Bathroom",
+      blog: "Medium.com",
+      image: BlogImage6,
+      duration: 4,
+    },
+  ];
+
+  const [displayedPosts, setDisplayedPosts] = useState(blogPost.slice(0, 3));
+
+  // view more blogs
+  const handleViewNextThree = () => {
+    setDisplayedPosts(blogPost.slice(3));
+  };
+
+  const handleViewLastThree = () => {
+    setDisplayedPosts(blogPost.slice(0, 3));
+  };
+
   return (
     <section className="blog" id="blog">
       <div className="mobile_header">
@@ -53,7 +97,7 @@ const Blog = () => {
       </div>
       <div className="inner_blog">
         <div className="left_blog">
-          {blogPost.map((post) => (
+          {displayedPosts.map((post) => (
             <NavLink to={post.link} target="_blank" key={post.id}>
               <div className="blog_card">
                 <div className="mobile_link">
@@ -94,23 +138,30 @@ const Blog = () => {
             Here are some of my published articles:
           </p>
           <div className="view-more-blogs">
-            <NavLink to="https://medium.com/@zubiduru">
-              <button>View more Blogs</button>
-            </NavLink>
+            <div className="more-projects-buttons">
+              <div className="backward">
+                <button onClick={handleViewLastThree}>
+                  <img src={BackwardIcon} alt="Backward" />
+                </button>
+              </div>
+              <div className="forward">
+                <button onClick={handleViewNextThree}>
+                  <img src={ForwardIcon} alt="Forward" />
+                </button>
+              </div>
+            </div>
             <img src={PointImage} alt="point" />
           </div>
         </div>
       </div>
-        <NavLink
-          to="https://medium.com/@zubiduru"
-          target="_blank"
-          style={{ textDecoration: "none" }}
-        >
-          <div className="mobile-blog-see-more">
-            <p>See More</p>
-            <img src={Arrow} alt="Arrow" />
-          </div>
-        </NavLink>
+        <div className="mobile-blog-see-more">
+          <button onClick={handleViewLastThree}>
+            <img src={BackwardIcon} alt="Backward" />
+          </button>
+          <button onClick={handleViewNextThree}>
+            <img src={ForwardIcon} alt="Forward" />
+          </button>
+        </div>
     </section>
   );
 };

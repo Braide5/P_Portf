@@ -5,6 +5,8 @@ import "./style/LiveProjects.scss";
 import CLoudnotteImage from "./images/cloudnotte.jpg";
 import soromImage from "./images/sorom.jpg";
 import AuntyKakaImage from "./images/auntykaka.jpg";
+import BackwardIcon from "./images/Backward.svg";
+import ForwardIcon from "./images/Forward.svg";
 import PointImage from "./images/points1.svg";
 
 import Arrow from "./images/Arrow.svg";
@@ -51,9 +53,16 @@ const LiveProjects = () => {
               meets functionality, and user experiences come to life
             </p>
             <div className="view-more-projects">
-              <NavLink to="https://www.behance.net/azubuikeduru">
-                <button>View more Projects</button>
-              </NavLink>
+
+                <div className="more-projects-buttons">
+                  <div className="backward">
+                    <button><img src={BackwardIcon} alt="Backward" /></button>
+                  </div>
+                  <div className="forward">
+                    <button><img src={ForwardIcon} alt="Forward" /></button>
+                  </div>
+                </div>
+
               <img src={PointImage} alt="point" />
             </div>
           </div>

@@ -73,7 +73,6 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 31.604px; /* 143.656% */
-
               }
               .blog_card_bottom {
                 display: flex;
@@ -163,27 +162,31 @@
         align-items: center;
         column-gap: 30px;
         margin-top: 50px;
-        button {
-          color: #0dc309;
-          font-family: Poppins;
-          font-size: 18.06px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          padding: 12px 28px;
-          border-radius: 40px;
-          border: 2px solid #0dc309;
-          background: transparent;
-          outline-color: transparent;
-          cursor: pointer;
+        .more-projects-buttons {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+
+          button {
+            border: transparent;
+            border-radius: 50%;
+            background-color: transparent;
+            outline-color: transparent;
+            cursor: pointer;
+
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
         }
-        img{
+        img {
           cursor: pointer;
         }
       }
     }
   }
-  .mobile-blog-see-more{
+  .mobile-blog-see-more {
     display: none;
   }
 }
@@ -246,16 +249,16 @@
       }
       .right_blog {
         width: 50%;
-        p{
+        p {
           font-size: 12px;
           line-height: normal;
         }
-        h1{
+        h1 {
           display: none;
         }
-        .view-more-blogs{
+        .view-more-blogs {
           margin-top: 10px;
-          button{
+          button {
             display: none;
           }
         }
@@ -323,21 +326,23 @@
         display: none;
       }
     }
-    .mobile-blog-see-more{
-      display: flex;align-items: center;justify-content: center;column-gap: 10px;
+    .mobile-blog-see-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
       margin-top: -20px;
 
-      p {
-        color: #0dc309;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 19.601px; /* 140.006% */
-      }
-      img {
-        width: 8.333px;
-        height: 13.333px;
+      button {
+        border: transparent;
+        border-radius: 50%;
+        background-color: transparent;
+        outline-color: transparent;
+        cursor: pointer;
+        img {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }
