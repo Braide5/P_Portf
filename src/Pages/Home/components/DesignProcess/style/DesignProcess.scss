@@ -23,6 +23,7 @@
         padding: 30px;
         border: 0.903px solid rgba(13, 195, 9, 0.46);
         border-radius: 20.295px;
+        cursor: pointer;
 
         &:focus {
           box-shadow: 0px 4.14426px 85.27px 5px rgba(13, 195, 9, 0.25);
@@ -98,10 +99,12 @@
         row-gap: 20px;
         position: relative;
         left: 80px;
+        cursor: pointer;
         .design_card {
           padding: 30px;
           border: 0.903px solid rgba(13, 195, 9, 0.46);
           border-radius: 20.295px;
+          cursor: pointer;
 
           &:focus {
             box-shadow: 0px 4.14426px 85.27px 5px rgba(13, 195, 9, 0.25);
@@ -148,6 +151,7 @@
         padding: 30px;
         border: 0.903px solid rgba(13, 195, 9, 0.46);
         border-radius: 20.295px;
+        cursor: pointer;
 
         &:focus {
           box-shadow: 0px 4.14426px 85.27px 5px rgba(13, 195, 9, 0.25);

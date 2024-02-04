@@ -87,7 +87,7 @@ const DesignProcess = () => {
       </div>
       <div className="inner_design_process">
         <div className="left_design_process">
-          <div className="design_card">
+          <div className="design_card" onClick={handleHideBrief}>
             <div className="card_header">
               <img src={BriefImage} alt="Brief Image" />
               <h3>Brief Break Down</h3>
@@ -121,7 +121,7 @@ const DesignProcess = () => {
               <span>Process</span>
             </h1>
           </div>
-          <div className="design_card hide_for_mobile">
+          <div className="design_card hide_for_mobile" onClick={handleHideTesting}>
             <div className="card_header ">
               <img src={TestingImage} alt="Testing Image" />
               <h3>Testing</h3>
@@ -151,7 +151,7 @@ const DesignProcess = () => {
           </div>
         </div>
         <div className="right_design_process">
-          <div className="design_card">
+          <div className="design_card" onClick={handleHideResearch}>
             <div className="card_header">
               <img src={ResearchImage} alt="Research Image" />
               <h3>Research</h3>
@@ -178,7 +178,7 @@ const DesignProcess = () => {
             ) : null}
           </div>
           <div className="special_cards">
-            <div className="design_card">
+            <div className="design_card" onClick={handleHideStory}>
               <div className="card_header">
                 <img src={StoryBoardImage} alt="StoryBoard Image" />
                 <h3>Mood Board</h3>
@@ -205,7 +205,7 @@ const DesignProcess = () => {
                 </div>
               ) : null}
             </div>
-            <div className="design_card">
+            <div className="design_card" onClick={handleHideVisual}>
               <div className="card_header">
                 <img src={VisualDesignImage} alt="VisualDesign Image" />
                 <h3>Visual Design</h3>
@@ -233,7 +233,7 @@ const DesignProcess = () => {
               ) : null}
             </div>
           </div>
-          <div className="design_card">
+          <div className="design_card" onClick={handleHidePrototype}>
             <div className="card_header">
               <img src={PrototypingImage} alt="Prototyping Image" />
               <h3>Prototyping</h3>
@@ -260,7 +260,7 @@ const DesignProcess = () => {
               </div>
             ) : null}
           </div>
-          <div className="design_card last-design">
+          <div className="design_card last-design" onClick={handleHideTesting}>
             <div className="card_header">
               <img src={TestingImage} alt="Testing Image" />
               <h3>Testing</h3>
