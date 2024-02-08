@@ -11,6 +11,7 @@ import ClockImage from "./images/Clock.png";
 import MobileLink from "./images/arrow-left.png";
 import Arrow from "./images/Arrow.svg";
 import LInkIcon from "./images/Link.png";
+import disabledBackwardIcon from "./images/disabledBackward.svg";
 import BackwardIcon from "./images/Backward.svg";
 import ForwardIcon from "./images/Forward.svg";
 import PointImage from "./images/points1.svg";
@@ -22,6 +23,10 @@ import BlogImage5 from "./images/Blog5.jpg";
 import BlogImage6 from "./images/Blog6.jpg";
 
 const Blog = () => {
+
+  const [backwardIcon,setBackwardIcon] = useState(disabledBackwardIcon);
+
+
   const blogPost = [
     {
       id: 1,
@@ -84,10 +89,14 @@ const Blog = () => {
   // view more blogs
   const handleViewNextThree = () => {
     setDisplayedPosts(blogPost.slice(3));
+    if (blogPost.length > 0) {
+      setBackwardIcon(BackwardIcon);
+    }
   };
 
   const handleViewLastThree = () => {
     setDisplayedPosts(blogPost.slice(0, 3));
+    setBackwardIcon(disabledBackwardIcon);
   };
 
   return (
@@ -141,7 +150,7 @@ const Blog = () => {
             <div className="more-projects-buttons">
               <div className="backward">
                 <button onClick={handleViewLastThree}>
-                  <img src={BackwardIcon} alt="Backward" />
+                  <img src={backwardIcon} alt="Backward" />
                 </button>
               </div>
               <div className="forward">
@@ -156,7 +165,7 @@ const Blog = () => {
       </div>
         <div className="mobile-blog-see-more">
           <button onClick={handleViewLastThree}>
-            <img src={BackwardIcon} alt="Backward" />
+            <img src={backwardIcon} alt="Backward" />
           </button>
           <button onClick={handleViewNextThree}>
             <img src={ForwardIcon} alt="Forward" />
