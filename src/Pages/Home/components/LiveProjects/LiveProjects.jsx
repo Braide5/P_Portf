@@ -3,7 +3,7 @@ import "./style/LiveProjects.scss";
 
 // Images
 import CLoudnotteImage from "./images/cloudnotte.jpg";
-import TravelBuddiesImage from "./images/TravelBuddies.jpg";
+import TravelBuddiesImage from "./images/TravelBuddies.png";
 import AuntyKakaImage from "./images/auntykaka.jpg";
 import BackwardIcon from "./images/Backward.svg";
 import ForwardIcon from "./images/Forward.svg";
