@@ -3,7 +3,7 @@ import "./style/LiveProjects.scss";
 
 // Images
 import CLoudnotteImage from "./images/cloudnotte.jpg";
-import soromImage from "./images/sorom.jpg";
+import TravelBuddiesImage from "./images/TravelBuddies.jpg";
 import AuntyKakaImage from "./images/auntykaka.jpg";
 import BackwardIcon from "./images/Backward.svg";
 import ForwardIcon from "./images/Forward.svg";
@@ -53,15 +53,18 @@ const LiveProjects = () => {
               meets functionality, and user experiences come to life
             </p>
             <div className="view-more-projects">
-
-                <div className="more-projects-buttons">
-                  <div className="backward">
-                    <button><img src={BackwardIcon} alt="Backward" /></button>
-                  </div>
-                  <div className="forward">
-                    <button><img src={ForwardIcon} alt="Forward" /></button>
-                  </div>
+              <div className="more-projects-buttons">
+                <div className="backward">
+                  <button>
+                    <img src={BackwardIcon} alt="Backward" />
+                  </button>
                 </div>
+                <div className="forward">
+                  <button>
+                    <img src={ForwardIcon} alt="Forward" />
+                  </button>
+                </div>
+              </div>
 
               <img src={PointImage} alt="point" />
             </div>
@@ -69,22 +72,21 @@ const LiveProjects = () => {
         </div>
         <div className="left_project">
           <NavLink
-            to="https://biasorom-web.vercel.app/"
+            to="https://travel-companion-nu.vercel.app/"
             target="_blank"
             style={{ textDecoration: "none" }}
           >
             <div className="project_card">
               <div className="project_header">
                 <div className="left_header">
-                  <h3>S0ROM</h3>
-                  <span>Travel Website and App</span>
+                  <h3>Travel Buddie</h3>
+                  <span>Travel Website</span>
                 </div>
               </div>
               <p>
-                Discover, plan, and experience the world with ease - Your
-                all-in-one travel companion.
+                Travel, Collaborate and Builde commnunity among fellow travels
               </p>
-              <img src={soromImage} alt="soromImage" />
+              <img src={TravelBuddiesImage} alt="Image" />
             </div>
           </NavLink>
           <NavLink

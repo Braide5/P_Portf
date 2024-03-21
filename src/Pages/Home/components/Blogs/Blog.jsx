@@ -25,7 +25,7 @@ import BlogImage6 from "./images/Blog6.jpg";
 const Blog = () => {
 
   const [backwardIcon,setBackwardIcon] = useState(disabledBackwardIcon);
-
+  const [disableButton,setDisableButton] = useState(true);
 
   const blogPost = [
     {
@@ -91,12 +91,14 @@ const Blog = () => {
     setDisplayedPosts(blogPost.slice(3));
     if (blogPost.length > 0) {
       setBackwardIcon(BackwardIcon);
+      setDisableButton(false);
     }
   };
 
   const handleViewLastThree = () => {
     setDisplayedPosts(blogPost.slice(0, 3));
     setBackwardIcon(disabledBackwardIcon);
+    setDisableButton(true);
   };
 
   return (
@@ -149,7 +151,7 @@ const Blog = () => {
           <div className="view-more-blogs">
             <div className="more-projects-buttons">
               <div className="backward">
-                <button onClick={handleViewLastThree}>
+                <button onClick={handleViewLastThree} disabled={disableButton}>
                   <img src={backwardIcon} alt="Backward" />
                 </button>
               </div>
