@@ -30,7 +30,7 @@ const Blog = () => {
   const blogPost = [
     {
       id: 1,
-      link: "https://blog.openreplay.com/three-plugins-to-convert-your-figma-designs-into-code/",
+      link: "https://blog.openreplay.com/authors/azubuike-duru/",
       date: "Nov 9, 2023 .",
       title: "From Figma to Code-3 Plugins",
       blog: "Openrepaly.me.com",
